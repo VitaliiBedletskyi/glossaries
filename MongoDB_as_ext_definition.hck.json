@@ -1,0 +1,160 @@
+{
+  "modelName": "New Model",
+  "collections": [
+    {
+      "collectionName": "New Collection",
+      "type": "object",
+      "properties": [
+        {
+          "name": "New Field",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "color": "#555555",
+          "error": {
+            "name": false,
+            "code": false
+          },
+          "GUID": "a33bfba6-cde9-4558-8cc4-31325bb7e6e6",
+          "parentRelationship": "",
+          "childRelationships": []
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "cd69b680-492d-4618-b2c9-74d290908720"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "validationLevel": "Off",
+      "validationAction": "Warn",
+      "storageEngineName": "WiredTiger",
+      "sharding": {
+        "unique": true,
+        "collation": "null"
+      },
+      "GUID": "8d675139-d7a2-4fdd-99f2-5c1fe2cd184e",
+      "bucketId": "640ec293-f2e2-4a6a-bb03-4eb23455517e"
+    }
+  ],
+  "buckets": [
+    {
+      "name": "New_Database",
+      "type": "bucket",
+      "collectionIds": [
+        "8d675139-d7a2-4fdd-99f2-5c1fe2cd184e"
+      ],
+      "backgroundColor": {
+        "r": 129,
+        "g": 212,
+        "b": 250,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "GUID": "640ec293-f2e2-4a6a-bb03-4eb23455517e"
+    }
+  ],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "640ec293-f2e2-4a6a-bb03-4eb23455517e": "New_Database",
+    "8d675139-d7a2-4fdd-99f2-5c1fe2cd184e": "New Collection",
+    "a33bfba6-cde9-4558-8cc4-31325bb7e6e6": "New Field"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "4f9f3354-bbdd-4e0a-babe-170792f5e6b2"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "23a2921f-8094-42a4-afda-947eb17f133d"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "adb7c157-7376-4d2a-ad83-c04261686066"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "businessGlossaries": [],
+  "businessGlossaryTerms": [],
+  "dbVersion": "v7.x",
+  "dbVendor": "MongoDB",
+  "appTarget": "MONGODB",
+  "creationTS": "2026-02-27T12:19:35.432Z",
+  "GUID": "07989eb6-c3bd-48b4-8ee9-70dd39a06d72",
+  "isLineageEnabled": false,
+  "lastModifTS": "2026-02-27T12:29:10.990Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.9.5"
+  },
+  "hackoladeMeta": {
+    "customPropertiesUpdated": true
+  },
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "8d675139-d7a2-4fdd-99f2-5c1fe2cd184e",
+            "x": 1129,
+            "y": 1224,
+            "width": 205,
+            "height": 50,
+            "color": {}
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [
+          {
+            "x": 1065,
+            "y": 1160,
+            "GUID": "640ec293-f2e2-4a6a-bb03-4eb23455517e"
+          }
+        ],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}
