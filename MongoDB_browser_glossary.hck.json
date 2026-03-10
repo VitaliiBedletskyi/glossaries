@@ -1,0 +1,266 @@
+{
+  "modelName": "New Model",
+  "collections": [
+    {
+      "collectionName": "New Collection",
+      "type": "object",
+      "properties": [
+        {
+          "name": "New Field",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "GUID": "18e01655-d374-4975-8100-1c3b1a20cf82",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field1",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "GUID": "070a7ad7-bb0c-4403-81b1-6cee7ef18d7e",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field2",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "GUID": "9a058ae0-b294-45d1-b307-47e4d74890c8",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "1afdef9d-0cd6-4688-b75c-1040b4597d96"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "validationLevel": "Off",
+      "validationAction": "Warn",
+      "storageEngineName": "WiredTiger",
+      "sharding": {
+        "unique": true,
+        "collation": "null"
+      },
+      "GUID": "e4a7ea78-dbac-465c-b975-764b36da319c",
+      "bucketId": "fe817c26-4d48-4663-937a-3b134064695a"
+    },
+    {
+      "collectionName": "New Collection1",
+      "type": "object",
+      "properties": [
+        {
+          "name": "New Field",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "GUID": "35c65f14-e56a-4581-abf5-6567469debf9",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field1",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "GUID": "390435c9-92df-4d5d-bc7a-6a36622f75e2",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field2",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "GUID": "efced5ac-11c1-4bef-9f22-7af2f52972b6",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field3",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "GUID": "0cd3cf1b-eb8b-4d7c-b94f-8a4c6aca387d",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "New Field4",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "GUID": "dc08e16c-3638-4be5-b801-1ebd1487e095"
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "6cb49360-c683-48b2-b81d-4ec1b53633b1"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "validationLevel": "Off",
+      "validationAction": "Warn",
+      "storageEngineName": "WiredTiger",
+      "sharding": {
+        "unique": true,
+        "collation": "null"
+      },
+      "GUID": "6a671363-cc6d-47e3-8421-c698808ef460",
+      "bucketId": "fe817c26-4d48-4663-937a-3b134064695a"
+    }
+  ],
+  "buckets": [
+    {
+      "name": "New_Database",
+      "type": "bucket",
+      "collectionIds": [
+        "e4a7ea78-dbac-465c-b975-764b36da319c",
+        "6a671363-cc6d-47e3-8421-c698808ef460"
+      ],
+      "backgroundColor": {
+        "r": 129,
+        "g": 212,
+        "b": 250,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "GUID": "fe817c26-4d48-4663-937a-3b134064695a"
+    }
+  ],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "fe817c26-4d48-4663-937a-3b134064695a": "New_Database",
+    "e4a7ea78-dbac-465c-b975-764b36da319c": "New Collection",
+    "18e01655-d374-4975-8100-1c3b1a20cf82": "New Field",
+    "070a7ad7-bb0c-4403-81b1-6cee7ef18d7e": "New Field1",
+    "9a058ae0-b294-45d1-b307-47e4d74890c8": "New Field2",
+    "6a671363-cc6d-47e3-8421-c698808ef460": "New Collection1",
+    "35c65f14-e56a-4581-abf5-6567469debf9": "New Field",
+    "390435c9-92df-4d5d-bc7a-6a36622f75e2": "New Field1",
+    "efced5ac-11c1-4bef-9f22-7af2f52972b6": "New Field2",
+    "0cd3cf1b-eb8b-4d7c-b94f-8a4c6aca387d": "New Field3",
+    "dc08e16c-3638-4be5-b801-1ebd1487e095": "New Field4"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "7e5cebb9-c813-45bb-b1e2-fdb96c7f899c"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "b8dd6ede-fbfc-4b9d-9c4e-4b856f88f5be"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "859e6298-822a-43bc-9519-cdb7a45b6175"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "businessGlossaries": [],
+  "businessGlossaryTerms": [],
+  "dbVersion": "v7.x",
+  "dbVendor": "MongoDB",
+  "appTarget": "MONGODB",
+  "creationTS": "2026-03-04T16:04:29.904Z",
+  "GUID": "0a0ec0d4-03e3-4519-8f62-8d3ff10528c9",
+  "isLineageEnabled": false,
+  "lastModifTS": "2026-03-04T16:06:17.892Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.9.5"
+  },
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "e4a7ea78-dbac-465c-b975-764b36da319c",
+            "x": 1104,
+            "y": 1104,
+            "width": 205,
+            "height": 86,
+            "color": {}
+          },
+          {
+            "GUID": "6a671363-cc6d-47e3-8421-c698808ef460",
+            "x": 1124,
+            "y": 1124,
+            "width": 212,
+            "height": 122,
+            "color": {}
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [
+          {
+            "x": 1040,
+            "y": 1040,
+            "GUID": "fe817c26-4d48-4663-937a-3b134064695a"
+          }
+        ],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}
