@@ -1,0 +1,1129 @@
+{
+  "modelName": "New model",
+  "collections": [
+    {
+      "collectionName": "Main Model",
+      "type": "object",
+      "properties": [
+        {
+          "name": "...other props",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "83d5d9f5-d639-47a3-b9b3-3c47a4b21026",
+          "error": {}
+        },
+        {
+          "name": "businessGLossaries",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "additionalItems": true,
+          "properties": [
+            {
+              "isActivated": true,
+              "GUID": "e4fb3b1a-cc7c-41b6-bf1f-877ca573f07b",
+              "type": "reference",
+              "$ref": "#/definitions/Business Glossary",
+              "refType": "collectionReference",
+              "ref": "caa3666a-ea77-41ab-a43f-9b5e8f495b85",
+              "refIdPath": [
+                "caa3666a-ea77-41ab-a43f-9b5e8f495b85"
+              ],
+              "displayName": "Business Glossary",
+              "arrayItem": true,
+              "error": {}
+            }
+          ],
+          "childType": "array",
+          "type": "array",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "223472b1-365e-48b6-bc0d-756b4b5cf00a",
+          "error": {}
+        },
+        {
+          "name": "businessGlossaryTerms",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "additionalItems": true,
+          "properties": [
+            {
+              "isActivated": true,
+              "GUID": "6294b594-887f-432e-8bcc-2df58567007f",
+              "type": "reference",
+              "$ref": "#/definitions/Business Glossary Term",
+              "refType": "collectionReference",
+              "ref": "c696d5c1-17ee-4ee7-9c52-4995c792730a",
+              "refIdPath": [
+                "c696d5c1-17ee-4ee7-9c52-4995c792730a"
+              ],
+              "displayName": "Business Glossary Term",
+              "arrayItem": true,
+              "error": {}
+            }
+          ],
+          "childType": "array",
+          "type": "array",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "bcbe6ff4-f8a7-4e6d-a982-67a3c95edca9",
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "d40e7e26-919e-4e54-b480-81c8b47624e8"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "2b9a3c85-97b8-45c7-af6e-3efd5e3e4276",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "collectionName": "Business Glossary",
+      "type": "object",
+      "properties": [
+        {
+          "name": "id",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "7111e7a8-3b4c-48da-9b13-f909370593e4",
+          "error": {},
+          "childRelationships": [
+            "92b32951-6654-47aa-a954-de43ecf82a5a"
+          ]
+        },
+        {
+          "name": "name",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "ba19ad20-c424-42a9-9f96-961c8190fe57",
+          "error": {}
+        },
+        {
+          "name": "mapping",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "additionalItems": true,
+          "properties": [
+            {
+              "isActivated": true,
+              "GUID": "0c79e3d4-d471-4669-82e3-76487866b640",
+              "type": "reference",
+              "$ref": "#/definitions/Glossary Column",
+              "refType": "collectionReference",
+              "ref": "215440fc-ad67-488e-875f-7baf079f1526",
+              "refIdPath": [
+                "215440fc-ad67-488e-875f-7baf079f1526"
+              ],
+              "displayName": "Glossary Column",
+              "arrayItem": true,
+              "error": {}
+            }
+          ],
+          "childType": "array",
+          "type": "array",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "9ba96acb-c480-4274-8e81-af5cdd587ff1",
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "aa49ae5a-6eaa-49dc-b6a6-9e6fe2642e03"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "caa3666a-ea77-41ab-a43f-9b5e8f495b85",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "collectionName": "Glossary Column",
+      "type": "object",
+      "properties": [
+        {
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "cf46d682-d9f0-4493-9fcd-13689cefbf64",
+          "name": "id",
+          "error": {},
+          "childRelationships": [
+            "b8d39ec0-bfe7-478e-ada5-e2d217da6e79"
+          ]
+        },
+        {
+          "name": "columnIdentifier",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "6fef57ae-ac6a-4693-abe1-975467a33315",
+          "error": {}
+        },
+        {
+          "name": "displayName",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "f2944b0b-b8c5-4abd-9950-145cc9516fbd",
+          "error": {}
+        },
+        {
+          "name": "isMultipleValue",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "index": true,
+          "required": false,
+          "alternateKey": false,
+          "childType": "boolean",
+          "type": "boolean",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "error": {},
+          "primaryKey": false,
+          "GUID": "542f2a7f-446e-41b6-8e6e-04c51881ba2b"
+        },
+        {
+          "name": "separator",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "4c504c9a-4147-4bc2-b376-b9d2a750f522",
+          "error": {}
+        },
+        {
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "23f34c4d-05ff-4a56-a722-dd5c3e537efc",
+          "name": "role",
+          "error": {}
+        },
+        {
+          "name": "position",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "index": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "primaryKey": false,
+          "required": false,
+          "alternateKey": false,
+          "childType": "number",
+          "type": "numeric",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "error": {},
+          "GUID": "0a8dfdf5-a737-4cab-a457-8fe7a8335d63"
+        },
+        {
+          "name": "isMapped",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "index": true,
+          "required": false,
+          "alternateKey": false,
+          "childType": "boolean",
+          "type": "boolean",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "error": {},
+          "primaryKey": false,
+          "GUID": "2b076d45-1543-435c-9bf7-15f945298d0b"
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "763f7c9d-5dd3-442a-86ef-50957e517d3e"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "215440fc-ad67-488e-875f-7baf079f1526",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "collectionName": "Business Glossary Term",
+      "type": "object",
+      "properties": [
+        {
+          "name": "id",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "95548cc4-619e-4426-b622-f623a9e104a3",
+          "error": {},
+          "childRelationships": [
+            "94193f8d-39c7-41d3-8840-39a46d5c71da"
+          ]
+        },
+        {
+          "name": "glossaryId",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "49c7f618-50d3-4950-85ee-cd1878ba23a4",
+          "error": {},
+          "relationshipType": "Foreign Key",
+          "foreignCollection": "caa3666a-ea77-41ab-a43f-9b5e8f495b85",
+          "foreignField": [
+            "caa3666a-ea77-41ab-a43f-9b5e8f495b85",
+            "7111e7a8-3b4c-48da-9b13-f909370593e4"
+          ],
+          "parentRelationship": "92b32951-6654-47aa-a954-de43ecf82a5a"
+        },
+        {
+          "name": "name",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "dc691faa-2c08-4bd4-862d-0cc361981bfb",
+          "error": {}
+        },
+        {
+          "name": "properties",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "properties": [
+            {
+              "hackoladeMeta": {},
+              "isActivated": true,
+              "primaryKey": false,
+              "required": false,
+              "childType": "varchar",
+              "type": "string",
+              "compositeKey": [
+                "compositePrimaryKey",
+                "compositeUniqueKey"
+              ],
+              "GUID": "bd50305e-81a2-4dc4-9832-262890f4ffcd",
+              "name": "<Gloosary Column Id>:<Value>",
+              "relationshipType": "Foreign Key",
+              "foreignCollection": "215440fc-ad67-488e-875f-7baf079f1526",
+              "foreignField": [
+                "215440fc-ad67-488e-875f-7baf079f1526",
+                "cf46d682-d9f0-4493-9fcd-13689cefbf64"
+              ],
+              "parentRelationship": "b8d39ec0-bfe7-478e-ada5-e2d217da6e79",
+              "error": {}
+            }
+          ],
+          "additionalProperties": false,
+          "alternateKey": false,
+          "childType": "object",
+          "type": "document",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "error": {},
+          "primaryKey": false,
+          "required": false,
+          "GUID": "82e800cd-825e-4510-a528-2855056965da"
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "6c8c80cc-0320-46ef-9f3f-a0b1e048da9c"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "c696d5c1-17ee-4ee7-9c52-4995c792730a",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "collectionName": "Model Object (Container, Entity, Attribute, Relationship)",
+      "type": "object",
+      "properties": [
+        {
+          "name": ".... other object props",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "required": false,
+          "childType": "varchar",
+          "type": "string",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "GUID": "a22b4a96-728d-45fe-84f7-72d7be8c8b80",
+          "error": {}
+        },
+        {
+          "name": "glossaryTerms",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "additionalItems": true,
+          "properties": [
+            {
+              "hackoladeMeta": {},
+              "isActivated": true,
+              "properties": [
+                {
+                  "name": "id",
+                  "hackoladeMeta": {},
+                  "isActivated": true,
+                  "primaryKey": false,
+                  "required": false,
+                  "childType": "varchar",
+                  "type": "string",
+                  "compositeKey": [
+                    "compositePrimaryKey",
+                    "compositeUniqueKey"
+                  ],
+                  "GUID": "21e8016c-d2d7-4760-8e3a-713ebc6d70ed",
+                  "error": {}
+                },
+                {
+                  "name": "glossaryTermId",
+                  "hackoladeMeta": {},
+                  "isActivated": true,
+                  "primaryKey": false,
+                  "required": false,
+                  "childType": "varchar",
+                  "type": "string",
+                  "compositeKey": [
+                    "compositePrimaryKey",
+                    "compositeUniqueKey"
+                  ],
+                  "GUID": "f03c40db-201d-4e7a-872f-d53378a38eca",
+                  "error": {},
+                  "relationshipType": "Foreign Key",
+                  "foreignCollection": "c696d5c1-17ee-4ee7-9c52-4995c792730a",
+                  "foreignField": [
+                    "c696d5c1-17ee-4ee7-9c52-4995c792730a",
+                    "95548cc4-619e-4426-b622-f623a9e104a3"
+                  ],
+                  "parentRelationship": "94193f8d-39c7-41d3-8840-39a46d5c71da"
+                }
+              ],
+              "additionalProperties": false,
+              "childType": "object",
+              "type": "document",
+              "compositeKey": [
+                "compositePrimaryKey",
+                "compositeUniqueKey"
+              ],
+              "GUID": "60dbc6f8-e670-4c4d-9bff-cefd4afc2aeb",
+              "arrayItem": true,
+              "primaryKey": false,
+              "required": false,
+              "displayName": "Glossary Term Refefernce",
+              "error": {}
+            }
+          ],
+          "alternateKey": false,
+          "childType": "array",
+          "type": "array",
+          "compositeKey": [
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "error": {},
+          "primaryKey": false,
+          "required": false,
+          "GUID": "055f635c-15cf-4372-b32c-ff12b9110a8e"
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "2a53fabd-4cb1-44dc-9081-5b97227fc465"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "GUID": "9d0b2af5-eca3-422f-b78a-c721474025fd",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    }
+  ],
+  "buckets": [],
+  "views": [],
+  "relationships": [
+    {
+      "name": "Business Glossary",
+      "relationshipType": "",
+      "parentField": [],
+      "parentCardinality": "1",
+      "childField": [],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "level": "field",
+      "GUID": "b0e63d7f-a1f8-431a-b38d-0eb11a47beee",
+      "lineSize": 2,
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "parentCollection": "2b9a3c85-97b8-45c7-af6e-3efd5e3e4276",
+      "childCollection": "caa3666a-ea77-41ab-a43f-9b5e8f495b85",
+      "hackoladeStyles": {
+        "GUID": "0db9bf76-7063-4599-aefb-75bba06baea4",
+        "autoPositioning": false,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1392.922033898305,
+            "y": 1347.3107344632767
+          },
+          {
+            "x": 1645.4485875706307,
+            "y": 1347.3107344632767
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      },
+      "parentVerb": "contains",
+      "childVerb": "stored in"
+    },
+    {
+      "name": "Glossary Column",
+      "relationshipType": "",
+      "parentField": [],
+      "parentCardinality": "1",
+      "childField": [],
+      "isActivated": true,
+      "childCardinality": "1..n",
+      "level": "field",
+      "GUID": "4c7dc093-6d4a-42ef-ae60-ae5cfebc9dd7",
+      "lineSize": 2,
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "parentCollection": "caa3666a-ea77-41ab-a43f-9b5e8f495b85",
+      "childCollection": "215440fc-ad67-488e-875f-7baf079f1526",
+      "hackoladeStyles": {
+        "GUID": "9a06c2d4-127b-4acf-ba3b-4d2137bc53b5",
+        "autoPositioning": false,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1238.9211439890264,
+            "y": 1597.9717514124359
+          },
+          {
+            "x": 1238.9211439890264,
+            "y": 1413.6214689265537
+          }
+        ],
+        "sides": [
+          "top",
+          "bottom"
+        ]
+      },
+      "childVerb": "stored in",
+      "parentVerb": "contains"
+    },
+    {
+      "name": "Business Glossary to Business Glossary Term",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "caa3666a-ea77-41ab-a43f-9b5e8f495b85",
+          "7111e7a8-3b4c-48da-9b13-f909370593e4"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "c696d5c1-17ee-4ee7-9c52-4995c792730a",
+          "49c7f618-50d3-4950-85ee-cd1878ba23a4"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "parentCollection": "caa3666a-ea77-41ab-a43f-9b5e8f495b85",
+      "childCollection": "c696d5c1-17ee-4ee7-9c52-4995c792730a",
+      "GUID": "92b32951-6654-47aa-a954-de43ecf82a5a",
+      "level": "field",
+      "lineSize": 2,
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "hackoladeStyles": {
+        "GUID": "d86ab6ff-af84-4b02-b387-7cec2ff202fc",
+        "autoPositioning": false,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1244.3367231638358,
+            "y": 881.8757062146951
+          },
+          {
+            "x": 1244.3367231638358,
+            "y": 1227
+          }
+        ],
+        "sides": [
+          "bottom",
+          "top"
+        ]
+      },
+      "childVerb": "belongs to"
+    },
+    {
+      "name": "Glossary Column to Business Glossary Term",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "215440fc-ad67-488e-875f-7baf079f1526",
+          "cf46d682-d9f0-4493-9fcd-13689cefbf64"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "c696d5c1-17ee-4ee7-9c52-4995c792730a",
+          "82e800cd-825e-4510-a528-2855056965da",
+          "bd50305e-81a2-4dc4-9832-262890f4ffcd"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "parentCollection": "215440fc-ad67-488e-875f-7baf079f1526",
+      "childCollection": "c696d5c1-17ee-4ee7-9c52-4995c792730a",
+      "GUID": "b8d39ec0-bfe7-478e-ada5-e2d217da6e79",
+      "level": "field",
+      "lineSize": 2,
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "hackoladeStyles": {
+        "GUID": "41040eef-93e3-43f7-afef-5aca9562ae08",
+        "autoPositioning": false,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1072.512994350279,
+            "y": 847.4768361581982
+          },
+          {
+            "x": 909.7175141242922,
+            "y": 847.4768361581982
+          },
+          {
+            "x": 909.7175141242922,
+            "y": 1637.7800621727638
+          },
+          {
+            "x": 1111.8983050847467,
+            "y": 1637.7800621727638
+          }
+        ],
+        "sides": [
+          "left",
+          "left"
+        ]
+      }
+    },
+    {
+      "name": "Glossary Term",
+      "relationshipType": "",
+      "parentField": [],
+      "parentCardinality": "1",
+      "childField": [],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "level": "field",
+      "GUID": "43db9d56-db9f-49fd-82aa-4787654c19e5",
+      "lineSize": 2,
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "parentCollection": "2b9a3c85-97b8-45c7-af6e-3efd5e3e4276",
+      "childCollection": "c696d5c1-17ee-4ee7-9c52-4995c792730a",
+      "hackoladeStyles": {
+        "GUID": "126c8b84-e0b7-4160-ad36-2bb7927c1353",
+        "autoPositioning": false,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1417.5435028248553,
+            "y": 858.0830508474635
+          },
+          {
+            "x": 1531.4960451977431,
+            "y": 858.0830508474635
+          },
+          {
+            "x": 1531.4960451977431,
+            "y": 1319.4045197740115
+          },
+          {
+            "x": 1645.4485875706307,
+            "y": 1319.4045197740115
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      },
+      "parentVerb": "contains",
+      "childVerb": "stored in"
+    },
+    {
+      "name": "Glossary Term Ref to Glossary Term",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "c696d5c1-17ee-4ee7-9c52-4995c792730a",
+          "95548cc4-619e-4426-b622-f623a9e104a3"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "9d0b2af5-eca3-422f-b78a-c721474025fd",
+          "055f635c-15cf-4372-b32c-ff12b9110a8e",
+          "60dbc6f8-e670-4c4d-9bff-cefd4afc2aeb",
+          "f03c40db-201d-4e7a-872f-d53378a38eca"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "parentCollection": "c696d5c1-17ee-4ee7-9c52-4995c792730a",
+      "childCollection": "9d0b2af5-eca3-422f-b78a-c721474025fd",
+      "GUID": "94193f8d-39c7-41d3-8840-39a46d5c71da",
+      "level": "field",
+      "lineSize": 2,
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "hackoladeStyles": {
+        "GUID": "e5f76f38-badd-4e68-9dcb-7b490ab740e5",
+        "autoPositioning": false,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1771.0104166666679,
+            "y": 725.9999999999969
+          },
+          {
+            "y": 651.9570621468993,
+            "x": 1771.0104166666679
+          },
+          {
+            "y": 651.9570621468993,
+            "x": 1278.5435028248558
+          },
+          {
+            "x": 1278.5435028248558,
+            "y": 744.2903954802318
+          }
+        ],
+        "sides": [
+          "top",
+          "top"
+        ]
+      },
+      "childVerb": "reference to",
+      "parentVerb": "definition to"
+    },
+    {
+      "name": "Main Model to Model object",
+      "relationshipType": "",
+      "parentField": [],
+      "parentCardinality": "1",
+      "childField": [],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "level": "field",
+      "GUID": "b9bb55ef-bdc3-4f74-84ac-f832e4292d6e",
+      "lineSize": 2,
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "parentCollection": "2b9a3c85-97b8-45c7-af6e-3efd5e3e4276",
+      "childCollection": "9d0b2af5-eca3-422f-b78a-c721474025fd",
+      "hackoladeStyles": {
+        "GUID": "7d1cd748-2f24-4e16-b494-8578b2a06558",
+        "autoPositioning": false,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1829.0104166666665,
+            "y": 891.3333333333305
+          },
+          {
+            "x": 1829.0104166666665,
+            "y": 1232.699435028249
+          }
+        ],
+        "sides": [
+          "bottom",
+          "top"
+        ]
+      },
+      "parentVerb": "contains",
+      "childVerb": "stored in"
+    }
+  ],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "2b9a3c85-97b8-45c7-af6e-3efd5e3e4276": "Main Model",
+    "83d5d9f5-d639-47a3-b9b3-3c47a4b21026": "...other props",
+    "caa3666a-ea77-41ab-a43f-9b5e8f495b85": "Business Glossary",
+    "7111e7a8-3b4c-48da-9b13-f909370593e4": "id",
+    "ba19ad20-c424-42a9-9f96-961c8190fe57": "name",
+    "215440fc-ad67-488e-875f-7baf079f1526": "Glossary Column",
+    "cf46d682-d9f0-4493-9fcd-13689cefbf64": "id",
+    "6fef57ae-ac6a-4693-abe1-975467a33315": "columnIdentifier",
+    "f2944b0b-b8c5-4abd-9950-145cc9516fbd": "displayName",
+    "223472b1-365e-48b6-bc0d-756b4b5cf00a": "businessGLossaries",
+    "b0e63d7f-a1f8-431a-b38d-0eb11a47beee": "Business Glossary",
+    "9ba96acb-c480-4274-8e81-af5cdd587ff1": "mapping",
+    "4c7dc093-6d4a-42ef-ae60-ae5cfebc9dd7": "Glossary Column",
+    "c696d5c1-17ee-4ee7-9c52-4995c792730a": "Business Glossary Term",
+    "95548cc4-619e-4426-b622-f623a9e104a3": "id",
+    "dc691faa-2c08-4bd4-862d-0cc361981bfb": "name",
+    "82e800cd-825e-4510-a528-2855056965da": "properties",
+    "49c7f618-50d3-4950-85ee-cd1878ba23a4": "glossaryId",
+    "92b32951-6654-47aa-a954-de43ecf82a5a": "Business Glossary to Business Glossary Term",
+    "bd50305e-81a2-4dc4-9832-262890f4ffcd": "<Gloosary Column Id>:<Value>",
+    "b8d39ec0-bfe7-478e-ada5-e2d217da6e79": "Glossary Column to Business Glossary Term",
+    "542f2a7f-446e-41b6-8e6e-04c51881ba2b": "isMultipleValue",
+    "23f34c4d-05ff-4a56-a722-dd5c3e537efc": "role",
+    "4c504c9a-4147-4bc2-b376-b9d2a750f522": "separator",
+    "0a8dfdf5-a737-4cab-a457-8fe7a8335d63": "position",
+    "2b076d45-1543-435c-9bf7-15f945298d0b": "isMapped",
+    "bcbe6ff4-f8a7-4e6d-a982-67a3c95edca9": "businessGlossaryTerms",
+    "43db9d56-db9f-49fd-82aa-4787654c19e5": "Glossary Term",
+    "9d0b2af5-eca3-422f-b78a-c721474025fd": "Model Object (Container, Entity, Attribute, Relationship)",
+    "a22b4a96-728d-45fe-84f7-72d7be8c8b80": ".... other object props",
+    "055f635c-15cf-4372-b32c-ff12b9110a8e": "glossaryTerms",
+    "21e8016c-d2d7-4760-8e3a-713ebc6d70ed": "id",
+    "f03c40db-201d-4e7a-872f-d53378a38eca": "glossaryTermId",
+    "94193f8d-39c7-41d3-8840-39a46d5c71da": "Glossary Term Ref to Glossary Term",
+    "b9bb55ef-bdc3-4f74-84ac-f832e4292d6e": "Main Model to Model object"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "fa6f36a0-b53e-4d4f-9bb6-a5d5fe904e56"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "de60f8e2-e68a-4ec4-917f-2cb44b69d8c6"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "ae04ca5e-c8f9-4eee-99cf-f7249dd07c28"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "businessGlossaries": [],
+  "businessGlossaryTerms": [],
+  "dbVendor": "Polyglot",
+  "appTarget": "Polyglot",
+  "creationTS": "2026-03-10T12:49:39.385Z",
+  "GUID": "1a4910c6-d0d1-4f30-8674-7fc2f7b716c9",
+  "isLineageEnabled": false,
+  "lastModifTS": "2026-03-10T13:22:09.351Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginName": "Polyglot",
+    "pluginVersion": "0.0.1",
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.9.6"
+  },
+  "hackoladeMeta": {},
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "2b9a3c85-97b8-45c7-af6e-3efd5e3e4276",
+            "x": 1645.4485875706307,
+            "y": 1232.699435028249,
+            "width": 365.9717514124293,
+            "height": 173.41016949152547,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "caa3666a-ea77-41ab-a43f-9b5e8f495b85",
+            "x": 1081,
+            "y": 1227,
+            "width": 311.92203389830513,
+            "height": 186.6214689265537,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "215440fc-ad67-488e-875f-7baf079f1526",
+            "x": 1111.8983050847467,
+            "y": 1597.9717514124359,
+            "width": 253.12090395480226,
+            "height": 174.19661016949163,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "c696d5c1-17ee-4ee7-9c52-4995c792730a",
+            "x": 1072.512994350279,
+            "y": 744.2903954802318,
+            "width": 345.0305084745762,
+            "height": 137.5853107344633,
+            "color": {
+              "hex": "#2196F3"
+            }
+          },
+          {
+            "GUID": "9d0b2af5-eca3-422f-b78a-c721474025fd",
+            "x": 1614.6770833333328,
+            "y": 725.9999999999969,
+            "width": 465.99999999999847,
+            "height": 165.33333333333354,
+            "color": {
+              "hex": "#2196F3"
+            }
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [],
+        "collapsedNodes": [
+          "2b9a3c85-97b8-45c7-af6e-3efd5e3e4276223472b1-365e-48b6-bc0d-756b4b5cf00ae4fb3b1a-cc7c-41b6-bf1f-877ca573f07b",
+          "caa3666a-ea77-41ab-a43f-9b5e8f495b859ba96acb-c480-4274-8e81-af5cdd587ff10c79e3d4-d471-4669-82e3-76487866b640",
+          "2b9a3c85-97b8-45c7-af6e-3efd5e3e4276bcbe6ff4-f8a7-4e6d-a982-67a3c95edca96294b594-887f-432e-8bcc-2df58567007fc696d5c1-17ee-4ee7-9c52-4995c792730a82e800cd-825e-4510-a528-2855056965da",
+          "2b9a3c85-97b8-45c7-af6e-3efd5e3e4276bcbe6ff4-f8a7-4e6d-a982-67a3c95edca96294b594-887f-432e-8bcc-2df58567007f"
+        ],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [
+            {
+              "GUID": "2b9a3c85-97b8-45c7-af6e-3efd5e3e4276",
+              "size": 100,
+              "x": 1040,
+              "y": 1040
+            },
+            {
+              "GUID": "caa3666a-ea77-41ab-a43f-9b5e8f495b85",
+              "size": 100,
+              "x": 864,
+              "y": 984
+            },
+            {
+              "GUID": "215440fc-ad67-488e-875f-7baf079f1526",
+              "size": 100,
+              "x": 936,
+              "y": 1277
+            },
+            {
+              "GUID": "c696d5c1-17ee-4ee7-9c52-4995c792730a",
+              "size": 100,
+              "x": 1171.012429378524,
+              "y": 1393.1581920903952
+            },
+            {
+              "GUID": "9d0b2af5-eca3-422f-b78a-c721474025fd",
+              "size": 100,
+              "x": 1170.561829096036,
+              "y": 755.9672316384177
+            }
+          ],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300,
+          "options": []
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "2b9a3c85-97b8-45c7-af6e-3efd5e3e4276"
+          },
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "caa3666a-ea77-41ab-a43f-9b5e8f495b85"
+          },
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "215440fc-ad67-488e-875f-7baf079f1526"
+          },
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "c696d5c1-17ee-4ee7-9c52-4995c792730a"
+          },
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "9d0b2af5-eca3-422f-b78a-c721474025fd"
+          }
+        ],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}
